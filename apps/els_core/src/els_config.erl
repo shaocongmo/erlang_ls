@@ -277,6 +277,7 @@ project_paths(RootPath, Dirs, Recursive) ->
   Paths = [ els_utils:resolve_paths( [ [RootPath, Dir, "src"]
                                      , [RootPath, Dir, "test"]
                                      , [RootPath, Dir, "include"]
+                                     , [RootPath, Dir]
                                      ]
                                    , RootPath
                                    , Recursive
